@@ -33,5 +33,175 @@
 		<main>
 			<div class="container">
 				<aside class="left-column">
-					<p>стоимость</p>
-					
+					<form class="filter-layer" action="https://echo.htmlacademy.ru/" method="post">
+						<h3>Стоимость:</h3>
+						<input type="range" min="0" max="15000" step="1000">
+						<label>от<input class="price" type="text" value="0"></label>
+						<label>до<input class="price" type="text" value="15000"></label>
+						<h3>Сетка:</h3>
+						<label>Адаптивная
+							<input type="radio" name="price" id="adaptive" value="adaptive" checked />
+						</label>
+						<label>Фиксированная
+							<input type="radio" name="price" id="fix" value="fix" />
+						</label>
+						<label>Резиновая
+							<input type="radio" name="price" id="Responsiv" value="Responsiv" />
+						</label>
+						<h3>Особенности:</h3>
+						<label>Слайдер
+							<input type="checkbox" name="slide" id="slide" value="slide" checked />
+						</label>
+						<label>Блок преимуществ
+							<input type="checkbox" name="features" id="features" value="features" />
+						</label>
+						<label>Новости
+							<input type="checkbox" name="news" id="news" value="news" checked />
+						</label>
+						<label>Галерея  
+							<input type="checkbox" name="gallery" id="gallery" value="gallery" />
+						</label>
+						<label>Корзина
+							<input type="checkbox" name="cart" id="cart" value="cart" />
+						</label>
+						<button type="submit">Показать</button>
+					</form>
+				</aside>
+				<article class="right-column">
+					<h3>Сортировать:</h3>
+					<ul>
+						<li><button>По цене</button></li>
+						<li><button>По типу</button></li>
+						<li><button>По названию</button></li>
+						<li><button class="btn-down"></button></li>
+						<li><button class="btn-up"></button></li>
+					</ul>
+					<div class="template">
+						<div class="template-item sedona">
+							<form>
+								<input type="radio" name="sedona" />
+								<input type="radio" name="sedona" />
+								<input type="radio" name="sedona" />
+							</form>
+							<img src="img/sedona.jpg" width="360" height="576" alt="sedona">
+							<div class="selection">
+								<a class="title-site" href="#">Sedona</a>
+								<p class="selection-item">Информационный сайт для туристов</p>
+								<a class="btn" href="#">9 900руб.</a>
+							</div>
+						</div>
+						<div class="template-item pink">
+							<form>
+								<input type="radio" name="pink" />
+								<input type="radio" name="pink" />
+								<input type="radio" name="pink" />
+							</form>
+							<img src="img/pink.jpg" width="360" height="576" alt="pink app">
+							<div class="selection">
+								<a class="title-site" href="#">Pink APP</a>
+								<p class="selection-item">Продуктовый лендинг приложения для iOS и Android</p>
+								<a class="btn" href="#">9 900руб.</a>
+							</div>
+						</div>
+						<div class="template-item barbershop">
+							<form>
+								<input type="radio" name="barbershop" />
+								<input type="radio" name="barbershop" />
+								<input type="radio" name="barbershop" />
+							</form>
+							<img src="img/barbershop.jpg" width="360" height="576" alt="barbershop">
+							<div class="selection">
+								<a class="title-site" href="#">barbershop</a>
+								<p class="selection-item">Сайт салоны красоты. Для мужчин, да.</p>
+								<a class="btn" href="#">9 900руб.</a>
+							</div>
+						</div>
+						<div class="template-item mishka">
+							<form>
+								<input type="radio" name="mishka" />
+								<input type="radio" name="mishka" />
+								<input type="radio" name="mishka" />
+							</form>
+							<img src="img/mishka.jpg" width="360" height="576" alt="mishka">
+							<div class="selection">
+								<a class="title-site" href="#">mishka</a>
+								<p class="selection-item">Интернет-магазин вязаных игрушек</p>
+								<a class="btn" href="#">9 900руб.</a>
+							</div>
+						</div>
+						<div class="template-item plus">
+							<form>
+								<input type="radio" name="a-plus" />
+								<input type="radio" name="a-plus" />
+								<input type="radio" name="a-plus" />
+							</form>
+							<img src="img/aplus.jpg" width="360" height="576" alt="a-plus">
+							<div class="selection">
+								<a class="title-site" href="#">a plus</a>
+								<p class="selection-item">Лендинг курсов повышения квалификации</p>
+								<a class="btn" href="#">9 900руб.</a>
+							</div>
+						</div>
+						<div class="template-item kvast">
+							<form>
+								<input type="radio" name="kvast" />
+								<input type="radio" name="kvast" />
+								<input type="radio" name="kvast" />
+							</form>
+							<img src="img/kvast.jpg" width="360" height="576" alt="kvast">
+							<div class="selection">
+								<a class="title-site" href="#">kvast</a>
+								<p class="selection-item">Промо-сайт производителя крафтового кваса</p>
+								<a class="btn" href="#">9 900руб.</a>
+							</div>
+						</div>
+					</div>
+					<div class="page-nav">
+						<a class="btn btn-checked">1</a>
+						<a class="btn " href="#">2</a>
+						<a class="btn three" href="#">3</a>
+						<a class="btn next" href="#">следующая</a>
+					</div>
+				</article>
+			</div>
+		</main>
+		<footer>
+			<div class="map">
+				<img src="img/map-marker.jpg">
+				<div class="contacts">
+					<h4>NЁRDS DESIGN STUDIO</h4>
+					<p>191186, Санкт-Петербург,<br> 
+					   ул. Б. Конюшенная, д. 19/8
+					</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a href="#">Напишите нам</a>
+				</div>				
+			</div>
+			<div class="container">
+				<div class="social">
+					<div class="social-btn">
+						<a href="#" class="vk">Вконтакте</a>
+						<a href="#" class="fb">Фейсбук</a>
+						<a href="#" class="inst">Инстаграм</a>
+					</div>
+					<div class="social-content">
+						<h2>Давайте дружить, это выгодно!</h2>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="writeUs">
+			<form action="https://echo.htmlacademy.ru/" method="post">
+				<fieldset>
+					<legend>Напишите нам</legend>					
+					<label>Ваше имя:<input type="text" placeholder="Представьтесь, пожалуйста"></label>
+					<label>Ваш e-mail:<input type="email" placeholder="Для отправки ответа"></label>
+					<label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
+				</fieldset>
+				<button type="submit">Отправить</button>
+				<span class="close-cross"></span>
+			</form>
+		</div>
+	</body>
+</html>
