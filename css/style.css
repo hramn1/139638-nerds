@@ -8,11 +8,7 @@ body
 	font-style:normal
 	
 }
-h2
-{
-	font-size:55px;
-	line-height:55px;
-	}
+
 
 
 
@@ -86,6 +82,56 @@ nav.main-menu a, .basket a
 	background-image: url(../img/map-marker.jpg);
 	background-size:cover
 }
+.slider-title
+{
+	font-size:55px;
+	line-height:55px;
+	margin-top:0px;
+	padding-top:70px;
+	margin-bottom:25px;
+}
+.slider
+{
+		position:relative;
+}
+.slide1
+{
+	background-image: url(../img/nerds-index-slide1.png);
+	padding-bottom:80px;
+	background-repeat: no-repeat;
+	background-position:430px 10px;
+}
+.slide2
+{
+	background-image: url(../img/nerds-index-slide2.png);
+	padding-bottom:80px;
+	background-repeat: no-repeat;
+	background-position:430px 10px;
+}
+.slide3
+{
+	background-image: url(../img/nerds-index-slide3.png);
+	padding-bottom:80px;
+	background-repeat: no-repeat;
+	background-position:407px 10px;
+}
+.slider-btn
+{
+    display: block;
+	background-color:#fb565a;
+	color:#ffffff;
+	text-decoration:none;
+	width:240px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	text-transform:uppercase;
+	margin-top:40px;
+}
+.slider-switch
+{
+	position:absolute;
+}
 .slide2, .slide3
 {
 	display:none;
@@ -110,4 +156,17 @@ nav.main-menu a, .basket a
 	content:"";
 	display:table;
 	clear:both
+}
+.widget
+{
+	padding-top:80px;
+}
+.widger-first, .widger-second, .widger-third
+{
+	float:left;
+	margin-right:100px;
+}
+.widger-third
+{
+	margin-right:0;
 }
