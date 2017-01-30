@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Нёрдс</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">	
+	</head>
+	<body>
+		<header>
+			<div class="container clearfix ">
+				<div class="row ">
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/nerds-logo.png" alt="Логотип">
+						</a>
+					</div>
+					<nav class="main-menu">
+						<ul>
+							<li><a href="#">Студия</a></li>
+							<li><a href="#">Клиенты</a></li>
+							<li><a>Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="basket ">
+						<a href="#">Корзина</a>
+					</div>
+				</div>
+				<div class="row">
+					<h1>Магазин готовых шаблонов</h1>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container clearfix">
+				<aside class="left-column">
+					<form class="filter-layer" action="https://echo.htmlacademy.ru/" method="post">
+						<h3>Стоимость:</h3>
+						<input type="range" min="0" max="15000" step="1000">
+						<label>от<input class="price" type="text" value="0"></label>
+						<label>до<input class="price" type="text" value="15000"></label>
+						<h3>Сетка:</h3>
+						<input type="radio" name="price" id="adaptive" value="adaptive" checked />
+						<label for="adaptive">Адаптивная</label>
+						<input type="radio" name="price" id="fix" value="fix" />
+						<label for="fix">Фиксированная</label>
+						<input type="radio" name="price" id="Responsiv" value="Responsiv" />
+						<label for="Responsiv">Резиновая</label>
+						<h3>Особенности:</h3>
+						<input type="checkbox" name="slide" id="slide" value="slide" checked />
+						<label for="slide">Слайдер</label>
+						<input type="checkbox" name="features" id="features" value="features" />
+						<label for="features">Блок преимуществ</label>
+						<input type="checkbox" name="news" id="news" value="news" checked />
+						<label for="news">Новости</label>
+						<input type="checkbox" name="gallery" id="gallery" value="gallery" />
+						<label for="gallery">Галерея</label>
+						<input type="checkbox" name="cart" id="cart" value="cart" />
+						<label for="cart">Корзина</label>
+						<button type="submit">Показать</button>
+					</form>
+				</aside>
+				<article class="right-column">
+					<h3>Сортировать:</h3>
+					<ul>
+						<li><a href="#">По цене</button></li>
+						<li><a href="#">По типу</button></li>
+						<li><a href="#">По названию</button></li>
+						<li><a href="#" class="btn-down"></button></li>
+						<li><a href="#" class="btn-up"></button></li>
+					</ul>
+					<div class="template">
+						<div class="template-item sedona">
+							<span class="template-icon"></span>
+							<img src="img/sedona.jpg" width="360" height="576" alt="sedona">
+							<div class="selection">
+								<h3>
+									<a class="title-site" href="#">Sedona</a>
+								</h3>
+								<p class="selection-item">Информационный сайт для туристов</p>
+								<span class="price">9 900руб.</span>
+							</div>
+						</div>
+						<div class="template-item pink">
+							<span class="template-icon"></span>
+							<img src="img/pink.jpg" width="360" height="576" alt="pink app">
+							<div class="selection">
+								<h3>
+									<a class="title-site" href="#">Pink APP</a>
+								</h3>
+								<p class="selection-item">Продуктовый лендинг приложения для iOS и Android</p>
+								<span class="price">9 900руб.</span>
+							</div>
+						</div>
+						<div class="template-item barbershop">
+							<span class="template-icon"></span>
+							<img src="img/barbershop.jpg" width="360" height="576" alt="barbershop">
+							<div class="selection">
+								<h3>
+									<a class="title-site" href="#">barbershop</a>
+								</h3>
+								<p class="selection-item">Сайт салоны красоты. Для мужчин, да.</p>
+								<span class="price">9 900руб.</span>
+							</div>
+						</div>
+						<div class="template-item mishka">
+							<span class="template-icon"></span>
+							<img src="img/mishka.jpg" width="360" height="576" alt="mishka">
+							<div class="selection">
+								<h3>
+									<a class="title-site" href="#">mishka</a>
+								</h3>
+								<p class="selection-item">Интернет-магазин вязаных игрушек</p>
+								<span class="price">9 900руб.</span>
+							</div>
+						</div>
+						<div class="template-item plus">
+							<span class="template-icon"></span>
+							<img src="img/aplus.jpg" width="360" height="576" alt="a-plus">
+							<div class="selection">
+								<h3>
+									<a class="title-site" href="#">a plus</a>
+								</h3>
+								<p class="selection-item">Лендинг курсов повышения квалификации</p>
+								<span class="price">9 900руб.</span>
+							</div>
+						</div>
+						<div class="template-item kvast">
+							<span class="template-icon"></span>
+							<img src="img/kvast.jpg" width="360" height="576" alt="kvast">
+							<div class="selection">
+								<h3>
+									<a class="title-site" href="#">kvast</a>
+								</h3>
+								<p class="selection-item">Промо-сайт производителя крафтового кваса</p>
+								<span class="price">9 900руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="page-nav">
+						<a class="btn btn-checked">1</a>
+						<a class="btn " href="#">2</a>
+						<a class="btn three" href="#">3</a>
+						<a class="btn next" href="#">следующая</a>
+					</div>
+				</article>
+			</div>
+		</main>
+		<footer>
+			<div class="map">
+				<div class="contacts">
+					<h4>NЁRDS DESIGN STUDIO</h4>
+					<p>191186, Санкт-Петербург,<br> 
+					   ул. Б. Конюшенная, д. 19/8
+					</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a href="#">Напишите нам</a>
+				</div>				
+			</div>
+			<div class="container">
+				<div class="social">
+					<div class="social-btn">
+						<a href="#" class="vk">Вконтакте</a>
+						<a href="#" class="fb">Фейсбук</a>
+						<a href="#" class="inst">Инстаграм</a>
+					</div>
+					<div class="social-content">
+						<h2>Давайте дружить, это выгодно!</h2>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="writeUs">
+			<form action="https://echo.htmlacademy.ru/" method="post">
+				<fieldset>
+					<legend>Напишите нам</legend>					
+					<label>Ваше имя:<input type="text" placeholder="Представьтесь, пожалуйста"></label>
+					<label>Ваш e-mail:<input type="email" placeholder="Для отправки ответа"></label>
+					<label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
+				</fieldset>
+				<button type="submit">Отправить</button>
+				<span class="close-cross"></span>
+			</form>
+		</div>
+	</body>
+</html>

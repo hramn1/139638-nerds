@@ -1,0 +1,113 @@
+body
+{
+	font-family: "Roboto", "Arial", Sans-serif;
+	font-size:16px;
+	line-height:24px;
+	color:#000000;
+	font-weight:normal;
+	font-style:normal
+	
+}
+h2
+{
+	font-size:55px;
+	line-height:55px;
+	}
+
+
+
+
+header.main-header
+{
+	background-color:#eeeeee;
+}
+.container
+{
+	width:1160px;
+	margin:0 auto;
+	padding:0 20px
+}
+header  .container
+{
+	padding-top:50px;
+}
+.logo
+{
+	float:left;
+}
+nav.main-menu
+{
+	float:left;
+	margin-left:200px;
+	padding-top:10px
+}
+nav.main-menu ul
+{
+	padding:0
+}
+nav.main-menu li
+{
+	display:inline-block
+}
+nav.main-menu a, .basket a
+{
+	line-height:30px;
+	text-decoration:none;
+	color:#000000;
+	text-transform:uppercase;
+	padding-right:40px
+}
+.basket 
+{
+	float:right;
+    padding-top:25px;
+	position:relative;
+}
+.basket::before
+{
+	content:"";
+	position:absolute;
+	width:15px;
+	background-image: url('../img/cart-icon.png');
+	top: 33px;
+	height: 15px;
+	left: -41px;
+	opacity: 0.3;
+}
+.basket a
+{
+	padding-right:0;
+
+}
+.map
+{
+	width:100%;
+	height:416px;
+	background-image: url(../img/map-marker.jpg);
+	background-size:cover
+}
+.slide2, .slide3
+{
+	display:none;
+}
+.right-column
+{
+	float:right;
+	width:800px
+}
+.template-item
+{
+	display:inline-block;
+	margin-left:20px;
+}
+.left-column
+{
+	float:left;
+	width:360px
+}
+.clearfix::after
+{
+	content:"";
+	display:table;
+	clear:both
+}
