@@ -170,3 +170,23 @@ nav.main-menu a, .basket a
 {
 	margin-right:0;
 }
+.left-block
+{
+	float:left;
+}
+.right-block
+{
+	float:right;
+}
+.writeUs
+{
+	display:none;
+}
+.social-btn
+{
+	float:left;
+}
+.social-content
+{
+	float:left;
+}
