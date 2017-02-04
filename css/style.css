@@ -8,20 +8,16 @@ body
 	font-style:normal
 	
 }
-
-
-
-
-
-header.main-header
-{
-	background-color:#eeeeee;
-}
 .container
 {
 	width:1160px;
 	margin:0 auto;
 	padding:0 20px
+}
+/*Header*/
+header.main-header
+{
+	background-color:#eeeeee;
 }
 header  .container
 {
@@ -106,7 +102,7 @@ nav.main-menu a, .basket a
 	background-image: url(../img/nerds-index-slide2.png);
 	padding-bottom:80px;
 	background-repeat: no-repeat;
-	background-position:430px 10px;
+	background-position:498px -7px;
 }
 .slide3
 {
@@ -127,14 +123,169 @@ nav.main-menu a, .basket a
 	line-height:50px;
 	text-transform:uppercase;
 	margin-top:40px;
+	border-radius:3px;
+}
+.slider-switch input
+{
+	display:none;
 }
 .slider-switch
 {
 	position:absolute;
+	top:306px;
+	left:540px;
+}
+.slider-switch input[type=radio]+label::after
+{
+	content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 23px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 5px #ffffff;
+	border-radius:50%;
+	background-color:#ffffff;
+}
+.slider-switch input[type=radio]:checked +label:after
+  {
+    border: 2px solid #c1c1c1
 }
 .slide2, .slide3
 {
 	display:none;
+}
+/*Widget*/
+.widget
+{
+	border-bottom:2px solid #eeeeee;
+	padding-top:80px;
+	padding-bottom:48px;
+}
+.widger-first, .widger-second, .widger-third
+{
+	float:left;
+	margin-right:100px;
+}
+.widger-third
+{
+	margin-right:0;
+}
+.widget h3
+{
+	font-size:24px;
+	line-height:30px;
+	text-transform:uppercase;
+	margin-top:18px;
+	margin-bottom:0;
+}
+.widget a
+{
+	color:#ffffff;
+	text-decoration:none;
+	display:block;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:18px;
+	width:160px;
+	padding: 16px;
+	box-sizing: border-box;
+	margin: 32px 0;
+}
+.widger-first a 
+{
+	background-color: #fb565a
+}
+.widger-second a 
+{
+	background-color: #00ca74
+}
+.widger-third a 
+{
+	background-color: #efc84a
+}
+/*Article*/
+article.home
+{
+	padding:40px 0 0 0;
+}
+article.home h1
+{
+	font-size:45px;
+	line-height:45px;
+	margin-bottom:38px;
+}
+.left-block
+{
+	float:left;
+	width:700px
+}
+p.left-block-text
+{
+	text-transform: uppercase;
+	margin-top: 38px;
+    margin-bottom: 24px;
+}
+.left-block ul
+{
+	list-style-image: url(../img/Layer-23.jpg);	
+	padding-left:0px;
+	list-style-position:inside;
+}
+.left-block li 
+{
+	padding-bottom:24px;
+}
+.right-block
+{
+	float:right;
+}
+.right-block-text
+{
+	text-align:center;
+	text-transform: uppercase;
+	margin-top: 29px;
+    margin-bottom: 24px;
+}
+ul.features
+{
+	margin: 42px 0;
+	padding: 0;
+}
+ul.features li
+{
+	width:100px;
+	float:left;
+	list-style:none;
+	margin-right:18px;
+}
+.percent
+{
+	font-size:45px;
+	font-weight:bold;
+	line-height:45px;
+}
+ul.features sup
+{
+	font-size:24px;
+}
+.right-block-list
+{
+	display:block;
+	margin-top: 18px;
+	line-height: 18px;
+}
+.client
+{
+	height:180px;
+	border-bottom: 2px solid #eeeeee;
+	border-top: 2px solid #eeeeee;
+}
+.client>img
+{
+opacity:0.3;
+vertical-align:middle;
+padding-top:50px;
 }
 .right-column
 {
@@ -157,27 +308,8 @@ nav.main-menu a, .basket a
 	display:table;
 	clear:both
 }
-.widget
-{
-	padding-top:80px;
-}
-.widger-first, .widger-second, .widger-third
-{
-	float:left;
-	margin-right:100px;
-}
-.widger-third
-{
-	margin-right:0;
-}
-.left-block
-{
-	float:left;
-}
-.right-block
-{
-	float:right;
-}
+
+
 .writeUs
 {
 	display:none;
