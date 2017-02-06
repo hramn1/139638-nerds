@@ -5,8 +5,7 @@ body
 	line-height:24px;
 	color:#000000;
 	font-weight:normal;
-	font-style:normal
-	
+	font-style:normal;
 }
 .container
 {
@@ -15,7 +14,7 @@ body
 	padding:0 20px
 }
 /*Header*/
-header.main-header
+header.main-header, header
 {
 	background-color:#eeeeee;
 }
@@ -191,18 +190,19 @@ nav.main-menu a, .basket a
 	padding: 16px;
 	box-sizing: border-box;
 	margin: 32px 0;
+	border-radius:3px;
 }
 .widger-first a 
 {
-	background-color: #fb565a
+	background-color: #fb565a;
 }
 .widger-second a 
 {
-	background-color: #00ca74
+	background-color: #00ca74;
 }
 .widger-third a 
 {
-	background-color: #efc84a
+	background-color: #efc84a;
 }
 /*Article*/
 article.home
@@ -280,6 +280,8 @@ ul.features sup
 	height:180px;
 	border-bottom: 2px solid #eeeeee;
 	border-top: 2px solid #eeeeee;
+	margin-top:33px;
+	margin-bottom: 80px;
 }
 .client>img
 {
@@ -287,10 +289,67 @@ opacity:0.3;
 vertical-align:middle;
 padding-top:50px;
 }
+.client>img:first-child
+{
+	padding-left: 31px;
+}
+.client>img:nth-child(2)
+{
+	padding-left: 92px;
+}
+.client>img:nth-child(3)
+{
+	padding-left: 99px;
+}
+.client>img:last-child
+{
+	padding-left: 116px;
+}
+.map .container
+{
+	padding-top:53px;
+}
+.contacts
+{
+	background:#ffffff;
+	width:220px;
+	padding:50px;
+}
+.contacts h4
+{
+	font-size:18px;
+	line-height:30px;
+	margin:0;
+}
+.contacts p
+{
+	color:#666666;
+	line-height:18px;
+	margin-top:25px;
+}
+.contacts .phone
+{
+	margin-top:0;
+}
+.contacts a
+{
+	color:#ffffff;
+	text-decoration:none;
+	display:block;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:18px;
+	box-sizing: border-box;
+	margin-top: 38px;
+	border-radius:3px;
+	background-color: #fb565a;
+	padding:16px;
+	
+}
 .right-column
 {
 	float:right;
-	width:800px
+	width:800px;
 }
 .template-item
 {
@@ -317,6 +376,17 @@ padding-top:50px;
 .social-btn
 {
 	float:left;
+	width:300px;
+	padding-top:70px;
+}
+.vk, .fb, .inst
+{
+	background-color:#e1e1e1;
+	font-size:0;
+	border-radius:50%;
+	width:80px;
+	height:80px;
+	display:inline-block;
 }
 .social-content
 {
