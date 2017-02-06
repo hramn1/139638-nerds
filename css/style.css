@@ -285,25 +285,38 @@ ul.features sup
 }
 .client>img
 {
-opacity:0.3;
-vertical-align:middle;
-padding-top:50px;
+	opacity:0.2;
+	vertical-align:middle;
+	padding-top:50px;
+
+}
+.client>img:hover
+{
+	opacity:1;
+}
+.client>img:active
+{
+	opacity:0.1;
 }
 .client>img:first-child
 {
 	padding-left: 31px;
+	padding-top:55px;
 }
 .client>img:nth-child(2)
 {
 	padding-left: 92px;
+	padding-top:46px
 }
 .client>img:nth-child(3)
 {
 	padding-left: 99px;
+	padding-top:46px
 }
 .client>img:last-child
 {
 	padding-left: 116px;
+	padding-top:52px;
 }
 .map .container
 {
