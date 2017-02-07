@@ -387,12 +387,23 @@ ul.features sup
 .writeUs
 {
 	display:none;
+	width:960px;
+	height:590px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	background-color:#ffffff;
+	margin: -275px -470px;
+}
+.social
+{
+	height:217px;
 }
 .social-btn
 {
 	float:left;
 	width:300px;
-	padding-top:70px;
+	padding-top:63px;
 }
 .vk, .fb, .inst
 {
@@ -409,7 +420,29 @@ ul.features sup
 {
 	background-image: url(../img/vk-icon.png);
 }
+.fb
+{
+	background-image: url(../img/fb-icon.png);
+	margin-left: 7px;
+}
+.inst
+{
+	background-image: url(../img/insta-icon.png);
+	margin-left: 6px;
+}
 .social-content
 {
 	float:left;
+	margin-left:100px;
+}
+.social-content h2
+{
+	font-size:36px;
+	line-height:36px;
+	margin-top:75px;
+	margin-bottom:0;
+}
+.social-content p
+{
+	margin-top:10px;
 }
