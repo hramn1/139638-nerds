@@ -292,17 +292,21 @@ ul.features sup
 }
 .client div
 {
-	opacity:0.2;
+	
 	vertical-align:middle;
 	padding-top:50px;
 	position:relative;
 
 }
-.client div:hover
+.client img
+{
+	opacity:0.2;
+}
+.client img:hover
 {
 	opacity:1;
 }
-.client div:active
+.client img:active
 {
 	opacity:0.1;
 }
@@ -329,11 +333,13 @@ ul.features sup
 .client div::after
 {
 	content:"";
-	width:2px;
-	height:2px;
-	margin-left:50px;
-	border-left: 2px solid red;
+	height:52px;
+	border-left: 2px solid #eeeeee;
 	position:absolute;
+}
+.client div:first-child::after
+{
+	margin:0
 }
 .map .container
 {
