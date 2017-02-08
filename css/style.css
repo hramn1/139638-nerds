@@ -409,6 +409,7 @@ ul.features sup
 	left:50%;
 	background-color:#ffffff;
 	margin: -275px -470px;
+	box-shadow: 0px 16px 20px 2px rgba(0, 0, 0, 0.75);
 }
 .social
 {
@@ -461,4 +462,11 @@ ul.features sup
 {
 	margin-top:10px;
 }
-
+h1.catalogHeading
+{
+	text-align: center;
+    font-size: 55px;
+	line-height: 55px;
+	margin-top: 70px;
+	margin-bottom:107px;
+}
