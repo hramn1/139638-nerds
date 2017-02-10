@@ -237,13 +237,25 @@ p.left-block-text
 }
 .left-block ul
 {
-	list-style-image: url(../img/Layer-23.jpg);	
+	list-style-type:none;	
 	padding-left:0px;
 	list-style-position:inside;
 }
 .left-block li 
 {
 	padding-bottom:24px;
+	position:relative;
+	padding-left:36px;
+}
+.left-block li::before
+{
+	content:"";
+	display:block;
+	border-bottom: 2px solid #fb565a;
+	width:25px;
+	position:absolute;
+	top: 11px;
+	left: 1px;
 }
 .right-block
 {
@@ -296,14 +308,11 @@ ul.features sup
 }
 .client div
 {
-	display:inline-block;
-}
-.client div
-{
 	
 	vertical-align:middle;
 	padding-top:50px;
 	position:relative;
+	display:inline-block;
 
 }
 .client img
@@ -347,7 +356,22 @@ ul.features sup
 }
 .client div:first-child::after
 {
-	margin:0
+	top: 59px;
+	left: 279px;
+}
+.client div:nth-child(2)::after
+{
+	top: 64px;
+	left: 345px;
+}
+.client div:nth-child(3):after
+{
+	top: 45px;
+	left: 340px;
+}
+.client div:last-child::after
+{
+	border:none;
 }
 .map .container
 {
@@ -396,18 +420,7 @@ ul.features sup
 	display:table;
 	clear:both
 }
-.writeUs
-{
-	display:none;
-	width:960px;
-	height:590px;
-	position:fixed;
-	top:50%;
-	left:50%;
-	background-color:#ffffff;
-	margin: -275px -470px;
-	box-shadow: 0px 16px 20px 2px rgba(0, 0, 0, 0.75);
-}
+
 .social
 {
 	height:217px;
@@ -516,6 +529,13 @@ article.right-column a
 	margin-left:10px;
 	position:relative;
 	margin-left:33px;
+	text-align:left;
+	font-size:0;
+	margin-bottom:23px;
+}
+.template-item:nth-child(2n+1)
+{
+	margin-left:0;
 }
 .template-item img
 {
@@ -523,10 +543,48 @@ article.right-column a
 }
 .selection
 {
-	position:absolute;
+	position: absolute;
+	bottom: 12px;
+	width: 100%;
+	z-index: 1;
+	background-color: #eeeeee;
 }
 .left-column
 {
 	float:left;
 	width:360px
+}
+.template-item .icon
+{
+	background-color:#ffffff;
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	display:inline-block;
+	margin-top:13px;
+	margin-left:9px;
+	
+}
+.template-item .icon:first-child
+{
+	margin-left:16px;
+}
+.writeUs legend
+{
+	font-size:45px;
+	line-height:45px;
+}
+.writeUs
+{
+	display:none;
+	width:960px;
+	height:590px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	background-color:#ffffff;
+	margin: -275px -470px;
+	box-shadow: 0px 16px 20px 2px rgba(0, 0, 0, 0.75);
+	padding:73px 100px;
+	box-sizing:border-box;
 }
