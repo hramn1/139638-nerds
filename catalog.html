@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">	
+		<link href="css/style.css" rel="stylesheet">
+		<meta name="format-detection" content="telephone=no">
 	</head>
 	<body>
 		<header>
@@ -19,16 +20,16 @@
 						<ul>
 							<li><a href="#">Студия</a></li>
 							<li><a href="#">Клиенты</a></li>
-							<li><a>Магазин</a></li>
+							<li><a class="active">Магазин</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
-					<div class="basket ">
+					<div class="basket">
 						<a href="#">Корзина</a>
 					</div>
 				</div>
 				<div class="row">
-					<h1 class="catalogHeading">Магазин готовых шаблонов</h1>
+					<h1 class="catalog-head">Магазин готовых шаблонов</h1>
 				</div>
 			</div>
 		</header>
@@ -83,7 +84,7 @@
 									<a class="title-site" href="#">Sedona</a>
 								</h3>
 								<p class="selection-item">Информационный сайт для туристов</p>
-								<span class="price">9 900руб.</span>
+								<span class="price">9 900 руб.</span>
 							</div>
 						</div>
 						<div class="template-item pink">
@@ -98,7 +99,7 @@
 									<a class="title-site" href="#">Pink APP</a>
 								</h3>
 								<p class="selection-item">Продуктовый лендинг приложения для iOS и Android</p>
-								<span class="price">9 900руб.</span>
+								<span class="price">9 900 руб.</span>
 							</div>
 						</div>
 						<div class="template-item barbershop">
@@ -113,7 +114,7 @@
 									<a class="title-site" href="#">barbershop</a>
 								</h3>
 								<p class="selection-item">Сайт салоны красоты. Для мужчин, да.</p>
-								<span class="price">9 900руб.</span>
+								<span class="price">9 900 руб.</span>
 							</div>
 						</div>
 						<div class="template-item mishka">
@@ -128,7 +129,7 @@
 									<a class="title-site" href="#">mishka</a>
 								</h3>
 								<p class="selection-item">Интернет-магазин вязаных игрушек</p>
-								<span class="price">9 900руб.</span>
+								<span class="price">9 900 руб.</span>
 							</div>
 						</div>
 						<div class="template-item plus">
@@ -143,7 +144,7 @@
 									<a class="title-site" href="#">a plus</a>
 								</h3>
 								<p class="selection-item">Лендинг курсов повышения квалификации</p>
-								<span class="price">9 900руб.</span>
+								<span class="price">9 900 руб.</span>
 							</div>
 						</div>
 						<div class="template-item kvast">
@@ -158,13 +159,13 @@
 									<a class="title-site" href="#">kvast</a>
 								</h3>
 								<p class="selection-item">Промо-сайт производителя крафтового кваса</p>
-								<span class="price">9 900руб.</span>
+								<span class="price">9 900 руб.</span>
 							</div>
 						</div>
 					</div>
 					<div class="page-nav">
 						<a class="btn btn-checked">1</a>
-						<a class="btn " href="#">2</a>
+						<a class="btn two" href="#">2</a>
 						<a class="btn three" href="#">3</a>
 						<a class="btn next" href="#">следующая</a>
 					</div>
@@ -176,12 +177,12 @@
 				<div class="container">
 					<div class="contacts">
 						<h4>NЁRDS DESIGN STUDIO</h4>
-						<p>191186, Санкт-Петербург,<br> 
+						<p>191186, Санкт-Петербург,<br>
 						   ул. Б. Конюшенная, д. 19/8
 						</p>
-						<p>тел. +7 (812) 275-75-75</p>
-						<a href="#">Напишите нам</a>
-					</div>
+						<p class="phone">тел. +7 (812) 275-75-75</p>
+						<a href="#" onClick="popup();">Напишите нам</a>
+					</div>		
 				</div>
 			</div>
 			<div class="container">
@@ -198,7 +199,7 @@
 				</div>
 			</div>
 		</footer>
-		<div class="writeUs">
+		<div class="write-us">
 			<form action="https://echo.htmlacademy.ru/" method="post">
 				<fieldset>
 					<legend>Напишите нам</legend>					

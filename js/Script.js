@@ -19,4 +19,10 @@ var S3 = document.getElementById("slide3").style.display="block";
 function popup()
 {
 var p1 = document.getElementById("WriteUs").style.display="block";
+var p2 = document.getElementById("ModalOverlay").style.display="block";
 }
+function Close ()
+{
+var p1 = document.getElementById("WriteUs").style.display="none";
+var p2 = document.getElementById("ModalOverlay").style.display="none";
+} 
