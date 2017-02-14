@@ -575,6 +575,23 @@ article.right-column li:first-child a
 .pink:hover .selection
 {
 	display:block;
+
+}
+.barbershop:hover .selection
+{
+	display:block;
+}
+.mishka:hover .selection
+{
+	display:block;
+}
+.plus:hover .selection
+{
+	display:block;
+}
+.kvast:hover .selection
+{
+	display:block;
 }
 div.selection>h3
 {
