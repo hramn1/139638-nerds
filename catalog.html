@@ -6,6 +6,7 @@
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<meta name="format-detection" content="telephone=no">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet"> 
 	</head>
 	<body>
 		<header>
@@ -36,29 +37,36 @@
 		<main>
 			<div class="container clearfix">
 				<aside class="left-column">
-					<form class="filter-layer" action="https://echo.htmlacademy.ru/" method="post">
+					<form class="filter-layer" action="https://echo.htmlacademy.ru/" method="post" >
 						<h3>Стоимость:</h3>
-						<input type="range" min="0" max="15000" step="1000">
-						<label>от<input class="price" type="text" value="0"></label>
-						<label>до<input class="price" type="text" value="15000"></label>
-						<h3>Сетка:</h3>
-						<input type="radio" name="price" id="adaptive" value="adaptive" checked />
-						<label for="adaptive">Адаптивная</label>
-						<input type="radio" name="price" id="fix" value="fix" />
-						<label for="fix">Фиксированная</label>
-						<input type="radio" name="price" id="Responsiv" value="Responsiv" />
-						<label for="Responsiv">Резиновая</label>
-						<h3>Особенности:</h3>
-						<input type="checkbox" name="slide" id="slide" value="slide" checked />
-						<label for="slide">Слайдер</label>
-						<input type="checkbox" name="features" id="features" value="features" />
-						<label for="features">Блок преимуществ</label>
-						<input type="checkbox" name="news" id="news" value="news" checked />
-						<label for="news">Новости</label>
-						<input type="checkbox" name="gallery" id="gallery" value="gallery" />
-						<label for="gallery">Галерея</label>
-						<input type="checkbox" name="cart" id="cart" value="cart" />
-						<label for="cart">Корзина</label>
+						<div class="range">
+							<input type="range" min="0" max="15000" value="0" step="1000">
+							<input class="range2" value="0" type="range" min="0" max="15000" step="1000">
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+							<label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+						</div>
+						<div class="variant">
+							<h3>Сетка:</h3>
+							<input type="radio" name="price" id="adaptive" value="adaptive" checked />
+							<label for="adaptive">Адаптивная</label>
+							<input type="radio" name="price" id="fix" value="fix" />
+							<label for="fix">Фиксированная</label>
+							<input type="radio" name="price" id="Responsiv" value="Responsiv" />
+							<label for="Responsiv">Резиновая</label>
+							<h3>Особенности:</h3>
+							<input type="checkbox" name="slide" id="slide" value="slide" checked />
+							<label for="slide">Слайдер</label>
+							<input type="checkbox" name="features" id="features" value="features" />
+							<label for="features">Блок преимуществ</label>
+							<input type="checkbox" name="news" id="news" value="news" checked />
+							<label for="news">Новости</label>
+							<input type="checkbox" name="gallery" id="gallery" value="gallery" />
+							<label for="gallery">Галерея</label>
+							<input type="checkbox" name="cart" id="cart" value="cart" />
+							<label for="cart">Корзина</label>
+						</div>
 						<button type="submit">Показать</button>
 					</form>
 				</aside>
@@ -199,17 +207,23 @@
 				</div>
 			</div>
 		</footer>
-		<div class="write-us">
+		<div class="write-us" id="WriteUs">
 			<form action="https://echo.htmlacademy.ru/" method="post">
 				<fieldset>
 					<legend>Напишите нам</legend>					
-					<label>Ваше имя:<input type="text" placeholder="Представьтесь, пожалуйста"></label>
-					<label>Ваш e-mail:<input type="email" placeholder="Для отправки ответа"></label>
+					<div class="half-col">
+						<label>Ваше имя:<input type="text" placeholder="Представьтесь, пожалуйста"></label>
+					</div>
+					<div class="half-col">	
+						<label>Ваш e-mail:<input type="email" placeholder="Для отправки ответа"></label>
+					</div>
 					<label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
 				</fieldset>
 				<button type="submit">Отправить</button>
-				<span class="close-cross"></span>
+				<span class="close-cross" onClick="Close();" ></span>
 			</form>
 		</div>
+		<div id="ModalOverlay" class="modal-overlay"></div>
+		<script src="js/script.js" type="text/javascript"></script>
 	</body>
 </html>
